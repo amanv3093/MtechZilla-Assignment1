@@ -1,8 +1,25 @@
-# React + Vite
+### Timer Application with Firebase Authentication
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple React application that implements a 25-minute work timer and a 5-minute break timer. It includes user authentication using Firebase, supporting both email/password login and Google login.
 
-Currently, two official plugins are available:
+## Hosted Link :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://mtech-zilla-assignment1.vercel.app/
+
+## Features
+
+- User Authentication: Allows users to sign up and log in using email/password or Google login via Firebase.
+
+- 25-Minute Work Timer: Users can start, pause, and reset the timer.
+
+- 5-Minute Break Timer: Automatically starts a 5-minute break timer after the 25-minute work timer ends.
+
+## Technologies Used
+
+- React.js
+
+- React Router
+
+- Tailwind css
+
+- Firebase
