@@ -53,27 +53,31 @@ const Timer = () => {
     <div>
       <Header />
       <div className="timer-container mt-16 w-full flex items-center justify-center text-white">
-        <div className="flex flex-col justify-center items-center">
-          <h1>{isFiveActive ? "Break Time" : "Timer"}</h1>
-          <h1 className="text-6xl font-bold">{time(timeLeft)}</h1>
-          <div className="flex gap-4 ">
+        <div className="h-[300px] w-[500px] flex flex-col justify-center items-center bg-[#3f3e3e] px-10 py-4 rounded-lg">
+          <h1 className="text-3xl font-bold">
+            {isFiveActive ? "Break Time" : "Running Time"}
+          </h1>
+          <h1 className="text-4xl text-center font-bold border w-[170px] py-1 rounded-md mt-6">
+            {time(timeLeft)}
+          </h1>
+          <div className="flex gap-4 mt-6">
             <button
               onClick={startTimer}
               disabled={isRunning}
-              class="bg-[#3498DB] text-white border-none text-2xl font-bold py-5 px-14 my-4 rounded-full cursor-pointer shadow-md transition duration-200"
+              class="bg-[#3498DB] text-white border-none text-xl font-bold px-7 py-2 rounded-[6px] cursor-pointer shadow-md transition duration-200"
             >
               Start
             </button>
             <button
               onClick={pauseTimer}
               disabled={!isRunning}
-              class="bg-[#3498DB] text-white border-none text-2xl font-bold py-5 px-14 my-4 rounded-full cursor-pointer shadow-md transition duration-200"
+              class="bg-[#3498DB] text-white border-none text-xl font-bold px-7 py-2 rounded-[6px] cursor-pointer shadow-md transition duration-200"
             >
               Pause
             </button>
             <button
               onClick={resetTimer}
-              class="bg-[#3498DB] text-white border-none text-2xl font-bold py-5 px-14 my-4 rounded-full cursor-pointer shadow-md transition duration-200"
+              class="bg-[#3498DB] text-white border-none text-xl font-bold px-7 py-2 rounded-[6px] cursor-pointer shadow-md transition duration-200"
             >
               Reset
             </button>
