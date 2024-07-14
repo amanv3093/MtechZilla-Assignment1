@@ -38,7 +38,9 @@ const Login = () => {
     e.preventDefault();
     try {
       await createUserWithEmailAndPassword(auth, email, password);
+      await signInWithEmailAndPassword(auth, email, password);
       alert("Signed up successfully");
+      navigate("/timer");
     } catch (error) {
       alert(error.message);
     }
